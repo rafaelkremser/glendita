@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@100;200;300;400;600;700&family=Raleway:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    color: #fff;
+}
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background: linear-gradient(132deg, rgba(255,0,173,1) 0%, rgba(220,0,255,1) 100%);
+    background-size: 300% 300%;
+    animation: gradient 6s ease infinite;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 50% 100%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 200px;
+}
+.timeline {
+    position: absolute;
+    left: 20%;
+    height: 399vh;
+    width: 1px;
+    background: #fff;
+}
+.time {
+    margin-top: 50px;
+}
+.content .points {
+    position: absolute;
+    left: 19.5%;
+    background: #fff;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+.content .date {
+    position: absolute;
+    left: 25%;
+}
+.content .describe {
+    position: relative;
+    left: 30%;
+    max-width: 400px;
+}
+.content .describe .text {
+    font-size: 13px;
+    margin-top: 10px;
+}
+.content .describe img {
+    margin-top: 20px;
+    margin-left: 10px;
+    height: 170px;
+    width: 170px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
